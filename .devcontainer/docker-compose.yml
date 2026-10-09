@@ -1,0 +1,7 @@
+services:
+    workspace:
+        build: .
+        volumes:
+            - ..:/workspaces/project3
+        # Prevent container from instantly exiting, allowing us to attach terminal
+        command: /bin/sh -c "sleep infinity"
